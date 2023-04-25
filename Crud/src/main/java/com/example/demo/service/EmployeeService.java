@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -19,9 +20,8 @@ public class EmployeeService implements Empservice{
     {
     	return er.save(emp);
     }
-	@Override
-	public List<Employee> getAllEmp() {
-		return er.findAll();
+	public Optional<Employee> getAllEmp(int id) {
+		return er.findById(id);
 	
 	}
 	public Employee updateInfo(Employee iu)

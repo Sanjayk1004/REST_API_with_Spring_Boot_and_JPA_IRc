@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,15 +31,17 @@ public class EmployeeController {
     {
     	return new ResponseEntity<Employee>(es.saveemployee(e),HttpStatus.CREATED);
     }
-	@GetMapping("/get")
-	public List<Employee> getAllEmp()
+	@GetMapping("/get/{id}")
+	public Optional<Employee> getAllEmp(@PathVariable("id") int id)
 	{
-		return es .getAllEmp();
+		return es .getAllEmp(id);
 	}
+	
 	@PutMapping("/put")
-	public Employee updateDetails(@RequestBody Employee id)
+	public Employee updateDetails(@RequestBody Employee e)
 	{
-		return es.updateInfo(id);
+		
+		return es.updateInfo(e);
 	}
 	@DeleteMapping("/del/{id}")
 	public void deleteDetails(@PathVariable ("id") int id)

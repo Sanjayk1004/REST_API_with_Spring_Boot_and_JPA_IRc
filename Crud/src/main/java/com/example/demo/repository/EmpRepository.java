@@ -6,4 +6,5 @@ import com.example.demo.model.Employee;
 
 public interface EmpRepository  extends JpaRepository<Employee,Integer>{
 
+
 }

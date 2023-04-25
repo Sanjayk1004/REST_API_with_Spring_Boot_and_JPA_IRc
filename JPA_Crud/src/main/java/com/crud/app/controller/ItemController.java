@@ -25,7 +25,7 @@ public class ItemController {
 		return i_ser.saveInfo(item_id);
 	}
 	@GetMapping("/gethm/{item_id}")
-	public Optional<ItemModel> getDetails(@PathVariable("item_id") int item_id)
+	public Optional<ItemModel> getDetails(@PathVariable("id") int id)
 	{
 		return i_ser.getInfo(item_id);
 	}
