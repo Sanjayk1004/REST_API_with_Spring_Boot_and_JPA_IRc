@@ -4,34 +4,34 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class ClassEx4 
 {
-	private int pid;
-	private String pname;
+	private int id;
+	private String name;
 	@JsonIgnore
 	private String page;
 	
 	public ClassEx4() {}
 
-	public ClassEx4(int pid, String pname, String page) {
+	public ClassEx4(int id, String name, String page) {
 		super();
-		this.pid = pid;
-		this.pname = pname;
+		this.id = id;
+		this.name = name;
 		this.page = page;
 	}
 
-	public int getPid() {
-		return pid;
+	public int getid() {
+		return id;
 	}
 
-	public void setPid(int pid) {
-		this.pid = pid;
+	public void setid(int id) {
+		this.id = id;
 	}
 
-	public String getPname() {
-		return pname;
+	public String getname() {
+		return name;
 	}
 
-	public void setPname(String pname) {
-		this.pname = pname;
+	public void setname(String name) {
+		this.name = name;
 	}
 
 	public String getPage() {

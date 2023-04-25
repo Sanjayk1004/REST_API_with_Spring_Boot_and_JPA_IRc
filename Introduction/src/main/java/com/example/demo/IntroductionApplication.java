@@ -10,7 +10,7 @@ public class IntroductionApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IntroductionApplication.class, args);
-        ClassEx4 p = new ClassEx4(1, "Sachin", "12");
+        ClassEx4 p = new ClassEx4(1, "Sanjay", "10");
 		
 		ObjectMapper obj = new ObjectMapper();
 		

@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ClassEx1 
 {
 	
-	@ResponseBody
 	@RequestMapping(value="/exercise1", method=RequestMethod.GET)
+	@ResponseBody
 	public String Welcome()
 	{
-		return "<h1>Welcome to RestApi class</h1>";
+		return "<h2>Welcome to RestApi class</h2>";
 	}
 }

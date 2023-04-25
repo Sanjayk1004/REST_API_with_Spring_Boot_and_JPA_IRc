@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 public class ClassEx2 
 {
-	public String name = "Iamneo";
+	public String name = "To String BOOT Application";
 	
 	@GetMapping("/exercise2")
 	

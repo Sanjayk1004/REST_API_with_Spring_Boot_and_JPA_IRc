@@ -13,7 +13,7 @@ public class ClassEx3
 	@Value("${carname: 'creta'}")
 	public String car;
 	
-	@GetMapping("exercise3")
+	@GetMapping("/exercise3")
 	
 	@ResponseBody
 	public String displayCar()
